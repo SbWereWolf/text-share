@@ -11,7 +11,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-/* Illuminate\Support\Facades\Route */
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('publish');
+});
+Route::get('/{link}', function () {
+    return view('note');
 });
